@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+            </div>
+            <div class="nav-link">
+                <ul>
+                    <a href="#">home</a>
+                    <a href="#">About</a>
+                    <a href="#">contact</a>
+                    <a href="#">login</a>
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <img src="5.jpg" alt="" class="mobile">
+            <div id="circle">
+                <div class="features one">
+                    <img src="images (1).jpg" alt="">
+                </div>
+                <div class="features two">
+                    <img src="images (2).jpg" alt="">
+                </div>
+                <div class="features three">
+                    <img src="images (3).jpg" alt="">
+                </div>
+                <div class="features four">
+                    <img src="images (4).jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="images (6).jpg" alt="" id="upbtn"><h3>features</h3>
+
+            <img src="images (6).jpg" alt="" id="downbtn">
+        </div>
+    </div>
+    <script>
+        var circle= document.getElementById("circle");
+        var upbtn= document.getElementById("upbtn");
+        var downbtn= document.getElementById("downbtn");
+
+        var rotatevalue = circle.style.transform;
+        var rotatesum;
+
+        upbtn.onclick = function()
+        {
+            rotatesum = rotatevalue + " (-90deg)";
+            circle.style.transform =rotatesum;
+            rotatevalue = rotatesum;
+        }
+    </script>
+
+</body>
+</html>
